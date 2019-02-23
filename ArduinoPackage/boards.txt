@@ -1,0 +1,69 @@
+menu.cpu=Processor
+
+############################################################
+
+#Menu
+
+menu.clock = Clock
+menu.core = Core
+
+
+Inuino.name=Inuino ( ATmega644P / 1284P )
+
+Inuino.upload.tool=arduino:avrdude
+Inuino.upload.protocol=arduino
+
+Inuino.bootloader.tool=arduino:avrdude
+Inuino.bootloader.unlock_bits=0x3F
+Inuino.bootloader.lock_bits=0x0F
+
+Inuino.build.board=Inuino
+Inuino.build.variant=Inuino
+Inuino.bootloader.file=optiboot/optiboot_{build.mcu}_{build.f_cpu}_{upload.speed}.hex
+
+## Inuino Cpu Select
+## -------------------------------------------------
+Inuino.menu.cpu.ATmega644P=ATmega644P / PA 
+Inuino.menu.cpu.ATmega644P.build.mcu=atmega644p
+Inuino.menu.cpu.ATmega644P.upload.maximum_size=64512
+Inuino.menu.cpu.ATmega644P.upload.maximum_data_size=4096
+
+Inuino.menu.cpu.Atmega1284P = ATmega1284P / PA 
+Inuino.menu.cpu.Atmega1284P.build.mcu=atmega1284p
+Inuino.menu.cpu.Atmega1284P.upload.maximum_size=130048
+Inuino.menu.cpu.Atmega1284P.upload.maximum_data_size=16384
+
+
+
+## Inuino Clock Select
+## -------------------------------------------------
+Inuino.menu.clock.Int8M=Internal 8Mhz
+Inuino.menu.clock.Int8M.build.f_cpu=8000000L
+Inuino.menu.clock.Int8M.bootloader.low_fuses=0xE2
+Inuino.menu.clock.Int8M.bootloader.high_fuses=0xDE
+Inuino.menu.clock.Int8M.bootloader.extended_fuses=0xFD
+Inuino.menu.clock.Int8M.upload.speed=57600
+
+Inuino.menu.clock.Ext8M=External 8Mhz
+Inuino.menu.clock.Ext8M.build.f_cpu=8000000L
+Inuino.menu.clock.Ext8M.bootloader.low_fuses=0xF7
+Inuino.menu.clock.Ext8M.bootloader.high_fuses=0xDE
+Inuino.menu.clock.Ext8M.bootloader.extended_fuses=0xFD
+Inuino.menu.clock.Ext8M.upload.speed=57600
+
+Inuino.menu.clock.Ext16M=External 16Mhz
+Inuino.menu.clock.Ext16M.build.f_cpu=16000000L
+Inuino.menu.clock.Ext16M.bootloader.low_fuses=0xF7
+Inuino.menu.clock.Ext16M.bootloader.high_fuses=0xDE
+Inuino.menu.clock.Ext16M.bootloader.extended_fuses=0xFD
+Inuino.menu.clock.Ext16M.upload.speed=115200
+
+## Inuino Core Select
+## -------------------------------------------------
+Inuino.menu.core.original=Arduino Core
+Inuino.menu.core.original.build.core=arduino:arduino
+
+Inuino.menu.core.custom=Custom Core
+Inuino.menu.core.custom.build.core=CustomCore
+
+############################################################

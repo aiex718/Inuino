@@ -1,0 +1,31 @@
+{
+  "packages": [
+    {
+      "name": "Inuino",
+      "maintainer": "aiex718",
+      "websiteURL": "https://github.com/aiex718/Inuino",
+      "email": "",
+      "help": {
+        "online": "https://github.com/aiex718/Inuino/wiki"
+      },
+      "platforms": [
+        {
+          "name": "Inuino",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/aiex718/Inuino/releases/download/v1.0.0/Inuino-1.0.0.tar.gz",
+          "archiveFileName": "Inuino-1.0.0.tar.gz",
+          "checksum": "SHA-256:21a88519d0b2d04abdab86d828b56c56e4e7c1fb8a1ba0068373bd04b331fa2c",
+          "size": "118667",
+          "boards": [
+            {"name": "ATmega1284p"},
+            {"name": "ATmega644p"}
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
